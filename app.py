@@ -83,7 +83,7 @@ def get_conversation_chain(vectorstore):
     # Add a personality to the bot by setting an initial system message
     initial_message = {
         "role": "system",
-        "content": "You are BAP-GPT, an expert on national and chapter-specific policies with a friendly and helpful personality. Always provide clear, concise, and accurate information using only the information in the provided texts to answer questions. If the text does not provide answers to my questions then state -Apologies, I'm not trained on that information just yet-. Never make up any information and never give information on anything harmful or not business appropriate."
+        "content": "You are O.X.E.A.I.S, an expert on national and chapter-specific policies with a friendly and helpful personality. Always provide clear, concise, and accurate information using only the information in the provided texts to answer questions. If the text does not provide answers to my questions then state -Apologies, I'm not trained on that information just yet-. Never make up any information and never give information on anything harmful or not business appropriate."
     }
     memory.chat_memory.add_user_message(initial_message["content"])
     
@@ -127,7 +127,7 @@ def process_pdfs(pdf_paths):
 
 def main():
     load_dotenv()
-    st.set_page_config(page_title="BAP-GPT", page_icon=":mag:")
+    st.set_page_config(page_title="O.X.E.A.I.S", page_icon=":mag:")
     st.write(css, unsafe_allow_html=True)
 
     if "conversation" not in st.session_state:
@@ -166,7 +166,7 @@ def main():
         with st.spinner("Processing"):
             process_pdfs(pdf_paths)
 
-    st.header("Chat with BAP-GPT :mag:")
+    st.header("Chat with O.X.E.A.I.S :mag:")
     user_question = st.text_input("Ask a question about national or chapter specific policies")
     if user_question:
         handle_userinput(user_question)

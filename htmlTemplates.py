@@ -28,7 +28,7 @@ css = '''
 bot_template = '''
 <div class="chat-message bot">
     <div class="avatar">
-        <img src="https://i.ibb.co/WG3nDnB/sflorida.png" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
+        <img src="https://www.unf.edu/brand/images/athletics-5.png" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
     </div>
     <div class="message">{{MSG}}</div>
 </div>
@@ -37,7 +37,7 @@ bot_template = '''
 user_template = '''
 <div class="chat-message user">
     <div class="avatar">
-       <img src="https://i.ibb.co/K9FCHHS/BAP-B-W-Logo.jpg">
+       <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Beta_Alpha_Psi_logo.png">
     </div>    
     <div class="message">{{MSG}}</div>
 </div>
